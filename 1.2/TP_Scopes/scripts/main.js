@@ -12,9 +12,9 @@ var contacts = [
 ];
 
 (function (window) {
-    function recupContacts(contacts){
+    function recupContacts(c){
         for (let i = 0; i < contacts.length; i++) {
-            console.log(contacts[i]);
+            console.log(c[i]);
         }
     }
     window.recupContacts = recupContacts;
