@@ -23,17 +23,16 @@ title2.addEventListener('click', function () {
     // }
     var childNodes = node.childNodes.length;
     for (let ii = 0; ii < childNodes; ii++) {
-        node.removeChild(node.lastChild)
+        node.removeChild(node.lastChild);
     }
 });
 
 var paragraphe = document.getElementById('paragraphe');
 paragraphe.addEventListener('mouseover', function (event){
     toggleColor.call(this, event);
+    var nodes = document.getElementById('textAjout');
+    toggleColor.call(nodes, event);
 });
-
-var p = document.createElement("p");
-document.body.appendChild(p);
 
 function toggleColor(event){
     if(event.x < (window.innerWidth/2)){

@@ -6,7 +6,7 @@ req.onreadystatechange = function (event) {
             console.log("Réponse reçu: %s", this.responseText);
             var reponse = JSON.parse(this.responseText)
             console.log(reponse);
-            affProfile(reponse)
+            affProfile(reponse);
         } else {
             console.log("Status de la réponse: %d (%s)", this.status, this.statusText);
             return null;
